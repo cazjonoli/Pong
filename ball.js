@@ -13,7 +13,7 @@ class Ball
 
     leftPlayer(player)
     {
-        let diff = this.pos.y - (player.pos.y - player.h/2);
+        let diff = this.pos.y - (player.pos.y - player.h / 2);
         let rad = radians(45);
         let angle = map(diff, 0, player.h, -rad, rad);
         this.velx = this.speed * cos(angle);
